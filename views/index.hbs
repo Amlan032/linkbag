@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to your link bag</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/link.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<h2 class="text-center">Your saved links</h2>
+	<a href="/add"><button class="btn btn-primary" id="add">Add New Link</button></a>
+	<a href="/logout"><button class="btn btn-warning" id="logout">Logout</button></a>
+	<div class="container" id="show">
+		
+			{{# each contents}}
+				<div class="link">
+					<div>Title: {{this.title}}</div>
+					<div id="ll">Link : {{this.link}}</div>
+					
+				</div>
+				
+			<button class="btn btn-danger boom">Delete</button>	
+
+			{{/each}}
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#show{
+	border: solid 2px black; 
+}
+.link{
+	border: solid 4px black;
+	margin: 2%;
+	padding: 1%;
+	word-wrap: break-word
+}
+#add{
+	margin-left: 30%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+.color{
+	background-color: #E6E6FA;
+}
+.boom{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#logout{
+	margin-left: 20%;
+	color: black;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" id="login">
+		<div>
+			{{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div class="alert alert-danger">{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+          {{/if}}
+		</div>
+		<h3>Login Form</h3>
+		<form method="post" action="/loggedin" id="loginform" >
+			<div class="form-group">
+				<label>Username: </label>
+				<input type="text" name="username" class="form-control" placeholder="Enter username" required><br>
+				<label>Password: </label>
+				<input type="password" name="password" class="form-control" placeholder="Enter password" required><br>
+			</div>
+			<input type="submit" name="submit" value="Login" class="btn btn-primary
+			" id="button">
+		</form>
+	</div>
+	<a href="/register"><button class="btn btn-success" id="signbtn">Click to Sign In!!</button></a>
+</body>
+</html>
