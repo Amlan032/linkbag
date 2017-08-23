@@ -1,0 +1,1 @@
+Many times while surfing the internet we come across many important links which we want to visit later or we want to just save it .Well Bookmarks is an option but how many links are you gonna bookmark. So now just copy the required link, put a suitable title to it and save using this app.
