@@ -163,7 +163,7 @@ app.post("/submitted",function(req,resp){
 			db.close();
 		})
 	});
-	resp.redirect("/");
+	resp.redirect("/dashboard");
 })
 
 app.post("/delete",function(req,resp){
